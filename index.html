@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio of Abdurahman NOUI</title>
+<meta name="description" content="Bonjour, c'est moi, Abdurahman Noui. Je suis étudiant en BUT GEII.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Abdurahman Noui</a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Accueil</a></li>
+      <li><a href="competences.html">Compétences &amp; AC du BUT3</a></li>
+      <li><a href="projets-stage.html">Projets / SAÉ / Stage</a></li>
+      <li><a href="soft-skills.html">Soft Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Bonjour, c'est moi,<br>Abdurahman Noui.<br><span class="soft">Je suis étudiant en BUT GEII.</span></h1>
+    <p class="lead">3ᵉ année de Bachelor Universitaire de Technologie — Génie Électrique et Informatique Industrielle, à l'IUT Nord Franche-Comté. Passionné par l'automatisme, la maintenance industrielle et l'électrotechnique.</p>
+    <div class="hero-actions">
+      <a class="btn btn-dark" href="mailto:abdurahman.noui@edu.univ-fcomte.fr">Envoyer un message</a>
+      <a class="btn btn-line" href="http://www.linkedin.com/in/abdurahman-noui-6b094830a" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="sec-title">Expérience professionnelle</h2>
+
+    <div class="entry">
+      <h3>Stagiaire Technicien de maintenance industrielle</h3>
+      <div class="meta">GE Vernova (GE Energy Products France) — Belfort <b>/</b> 2026 · 11 semaines</div>
+      <p>Maintenance corrective et préventive d'un parc de machines-outils à commande numérique (Siemens 840D, Fanuc 16i, NUM) pour la production de pièces de turbines à gaz : diagnostic de pannes électriques, automatisme (Step 7, LOGO!), variateurs, capteurs, robotique KUKA, consignation LOTO. Projet personnel : adaptation et mise en service du programme automate d'une centrifugeuse industrielle.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Stagiaire Technicien de maintenance</h3>
+      <div class="meta">Trevest <b>/</b> 01/2025 – 03/2025</div>
+      <p>Première expérience en maintenance : interventions techniques, découverte de l'environnement industriel et des méthodes de travail en équipe.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Bénévole</h3>
+      <div class="meta">Sourire et Solidarité <b>/</b> Mai 2021 – Aujourd'hui</div>
+      <p>Engagement associatif régulier : actions solidaires, sens du service et travail en équipe.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">Éducation</h2>
+
+    <div class="entry">
+      <h3>Institut universitaire de technologie Nord-Franche-Comté</h3>
+      <div class="meta">Bachelor Universitaire de Technologie — Génie Électrique et Informatique Industrielle <b>/</b> 2023 – 2026</div>
+      <p>Électrotechnique, automatisme, informatique industrielle, réseaux, énergie. Parcours Électricité et Maîtrise de l'Énergie (ÉME).</p>
+    </div>
+
+    <div class="entry">
+      <h3>Lycée Gustave Courbet</h3>
+      <div class="meta">Baccalauréat, Mathématiques et Physique-Chimie <b>/</b> 2020 – 2023</div>
+      <p></p>
+    </div>
+  </div>
+</section>
+
+<div class="quote">
+  <blockquote>J'ai un ennemi à vaincre, il habite en moi, il m'empêche d'avancer et s'il n'est pas dompté, il brise une vie entière. Je parle de l'âme, celle qui te dit de t'asseoir quand tu dois te lever, celle qui te dit de ne pas aller au sport quand tu veux y aller. L'âme, lorsque son éducation est délaissée, détruira ta vie. Oui, au début c'est dur, tu ressentiras un mal-être en sortant de ce que l'on appelle la zone de confort. Mais en forçant son âme à la discipline, elle goûtera au bonheur du progrès.</blockquote>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">Me contacter</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="lbl">Email</div>
+        <a href="mailto:abdurahman.noui@edu.univ-fcomte.fr">abdurahman.noui@edu.univ-fcomte.fr</a>
+      </div>
+      <div class="contact-item">
+        <div class="lbl">LinkedIn</div>
+        <a href="http://www.linkedin.com/in/abdurahman-noui-6b094830a" target="_blank" rel="noopener">linkedin.com/in/abdurahman-noui</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Tous droits réservés — Abdurahman Noui</footer>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('show')));
+</script>
+</body>
+</html>

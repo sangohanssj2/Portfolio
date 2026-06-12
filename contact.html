@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Portfolio of Abdurahman NOUI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Abdurahman Noui</a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="competences.html">Compétences &amp; AC du BUT3</a></li>
+      <li><a href="projets-stage.html">Projets / SAÉ / Stage</a></li>
+      <li><a href="soft-skills.html">Soft Skills</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:30px">
+  <div class="wrap">
+    <h1>Me contacter</h1>
+    <p class="lead">Étudiant en BUT3 GEII à la recherche d'une alternance ou d'un emploi en automatisme, maintenance industrielle ou électrotechnique. N'hésitez pas à me contacter.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="lbl">Email</div>
+        <a href="mailto:abdurahman.noui@edu.univ-fcomte.fr">abdurahman.noui@edu.univ-fcomte.fr</a>
+      </div>
+      <div class="contact-item">
+        <div class="lbl">LinkedIn</div>
+        <a href="http://www.linkedin.com/in/abdurahman-noui-6b094830a" target="_blank" rel="noopener">linkedin.com/in/abdurahman-noui</a>
+      </div>
+      <div class="contact-item">
+        <div class="lbl">Localisation</div>
+        <a>Belfort, Bourgogne-Franche-Comté</a>
+      </div>
+      <div class="contact-item">
+        <div class="lbl">CV</div>
+        <a href="#">Télécharger mon CV (PDF) — lien à ajouter</a>
+      </div>
+    </div>
+    <div class="hero-actions" style="margin-top:46px">
+      <a class="btn btn-dark" href="mailto:abdurahman.noui@edu.univ-fcomte.fr">Envoyer un message</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Tous droits réservés — Abdurahman Noui</footer>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('show')));
+</script>
+</body>
+</html>

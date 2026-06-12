@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soft Skills &amp; Profil personnel — Portfolio of Abdurahman NOUI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Abdurahman Noui</a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="competences.html">Compétences &amp; AC du BUT3</a></li>
+      <li><a href="projets-stage.html">Projets / SAÉ / Stage</a></li>
+      <li><a class="active" href="soft-skills.html">Soft Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:30px">
+  <div class="wrap">
+    <h1>Soft Skills &amp; Profil personnel</h1>
+    <p class="lead">Au-delà de la technique, les qualités humaines développées en formation, en stage et dans mon engagement associatif.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="cards">
+
+      <div class="card">
+        <div class="tag">Méthode</div>
+        <h3>Rigueur &amp; méthodologie</h3>
+        <p>Démarche de diagnostic structurée (hypothèses → tests → élimination), respect strict des procédures de consignation (LOTO, VAT, EPI) et traçabilité systématique : relevés de câblage avant démontage, sauvegardes avant modification.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Autonomie</div>
+        <h3>Autonomie &amp; initiative</h3>
+        <p>Montée en autonomie rapide en stage : de l'observation jusqu'à la conduite complète d'un projet d'automatisme, dont la résolution en autonomie d'un bug de comptage que personne n'avait identifié.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Collectif</div>
+        <h3>Travail en équipe</h3>
+        <p>Collaboration quotidienne avec techniciens électriciens, mécaniciens et opérateurs de production. Bénévole depuis 2021 au sein de l'association Sourire et Solidarité.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Communication</div>
+        <h3>Communication &amp; transmission</h3>
+        <p>Rédaction de rapports hebdomadaires illustrés pendant tout le stage, de procédures exploitables par des tiers (calibration KUKA), et adaptation du discours selon l'interlocuteur : opérateur, technicien ou responsable.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Persévérance</div>
+        <h3>Persévérance face aux pannes complexes</h3>
+        <p>Certaines pannes ont demandé plusieurs jours et plusieurs hypothèses successives (triple cause sur une grenailleuse, instabilité de mesure sur la Berthiez) sans jamais abandonner avant la remise en service.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Discipline</div>
+        <h3>Discipline personnelle</h3>
+        <p>Sport régulier et exigence envers moi-même : je crois profondément que la discipline est la clé du progrès, comme l'exprime la citation qui ouvre mon portfolio.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="quote">
+  <blockquote>Mais en forçant son âme à la discipline, elle goûtera au bonheur du progrès.</blockquote>
+</div>
+
+<footer>© 2026 Tous droits réservés — Abdurahman Noui</footer>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('show')));
+</script>
+</body>
+</html>

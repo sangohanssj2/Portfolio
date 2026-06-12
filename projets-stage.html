@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets / SAÉ / Stage — Portfolio of Abdurahman NOUI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Abdurahman Noui</a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="competences.html">Compétences &amp; AC du BUT3</a></li>
+      <li><a class="active" href="projets-stage.html">Projets / SAÉ / Stage</a></li>
+      <li><a href="soft-skills.html">Soft Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:30px">
+  <div class="wrap">
+    <h1>Projets / SAÉ / Stage</h1>
+    <p class="lead">Mes réalisations en BUT GEII : projets et SAÉ menés à l'IUT, et interventions marquantes de mon stage en maintenance industrielle chez GE Vernova.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <h2 class="sec-title">Stage — GE Vernova (Belfort)</h2>
+    <p class="sec-sub">11 semaines au service maintenance d'un site de production de pièces de turbines à gaz : dépannage électrique de machines-outils CN, automatisme, variateurs, capteurs et robotique.</p>
+    <div class="cards">
+
+      <div class="card full">
+        <div class="tag">Projet de stage · Automatisme</div>
+        <h3>Adaptation &amp; mise en service du programme LOGO! 8.4 d'une centrifugeuse industrielle</h3>
+        <p>Adaptation complète d'un programme automate d'une machine de référence vers une seconde centrifugeuse : remappage des entrées/sorties, résolution d'un conflit entre deux versions de schémas électriques, câblage d'une colonne lumineuse IFM DV2120, et correction en autonomie d'un bug de comptage parasite (temporisation T_ON de 500 ms). Mise en service validée sur machine. → détaillé dans les AC31.03 et AC32.02.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Diagnostic · Affûteuse N°1</div>
+        <h3>Court-circuit variateur d'axe</h3>
+        <p>Diagnostic en 3 phases (isolement moteurs, codeurs, isolation du variateur) jusqu'à la cause racine : une phase à la masse dans le câble d'alimentation. Remplacement de 36 m de câble et validation par cycle de test.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Diagnostic · Carnaghi</div>
+        <h3>Défaut débit de lubrification</h3>
+        <p>Crépine encrassée remplacée, puis débitmètre, puis découverte de la vraie cause : câblage NC/NO inversé sur le connecteur M12. Recâblage de la sortie NO et relance de la machine.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Mesure · Berthiez RVM 2800/220</div>
+        <h3>Chaîne de mesure de vibration broche</h3>
+        <p>Valeurs instables à l'équilibrage : campagne de 6 essais croisés, resoudage de prise Heidenhain avec blindage CEM, puis remplacement complet des câbles oxydés (intervention en nacelle).</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Robotique · KUKA</div>
+        <h3>Calibration robot par EMD + procédure</h3>
+        <p>Calibration axe par axe (kit SEMD/MEMD, câble X32, SMARTPAD) pour faire concorder positions mécanique et électronique, et rédaction d'une procédure illustrée en 10 étapes pour l'équipe maintenance.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Électrotechnique</div>
+        <h3>Remplacements moteurs &amp; variateur ATV30</h3>
+        <p>Consignation LOTO, VAT, dépose/repose, couplages étoile et triangle, paramétrage du variateur depuis la plaque signalétique, mesures de validation (pince ampèremétrique, équilibrage des phases) et essais.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Fiabilité · CN</div>
+        <h3>Sauvegardes NC + PLC multi-constructeurs</h3>
+        <p>Sauvegardes des programmes sur Siemens 840D (archivage via IHM) et Fanuc 16i (carte PCMCIA) pour prévenir les pertes de données et garantir la continuité de production.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="sec-title">Projets &amp; SAÉ à l'IUT</h2>
+    <div class="cards">
+
+      <div class="card">
+        <div class="tag">SAÉ · Énergie</div>
+        <h3>Infrastructure de recharge pour véhicules électriques (IRVE)</h3>
+        <p>Mise en service d'une borne de recharge : procédure d'installation et de mise en service (Hager Charge, phase mapping), procédure d'essais avec simulateur de VE Metrel A1532 XA, et plan de maintenance préventive. → détaillé dans les AC32.03, AC33.01 et AC34.02.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">SAÉ · Réseaux industriels</div>
+        <h3>Systèmes multiplexés sur véhicules — MOTHYS</h3>
+        <p>Affichage sur IHM des données circulant sur le réseau CAN de la maquette MOTHYS : pilotage par trames CAN via BUSMaster, filtrage des identifiants (0x501, 0x502, 0x504, 0x21E) et dossier de conformité versionné (V1 → V3). → détaillé dans l'AC34.03.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Projet · Robotique</div>
+        <h3>Automatisation du transfert de pièces — robot ABB IRB1600</h3>
+        <p>Rédaction du cahier des charges d'un système robotisé de transfert de pièces depuis un convoyeur vers une palette : besoins fonctionnels, sécurité des opérateurs, plan de gestion des risques. → détaillé dans l'AC31.01.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Projet · Électrotechnique</div>
+        <h3>Microcentrale hydraulique didactique — départ moteur</h3>
+        <p>Dimensionnement du départ moteur de la pompe (7,5 kW) : calcul du courant nominal, comparaison de 4 architectures (TeSys U, 2 produits, 3 produits, variateur ATV630) et justification normative des choix. → détaillé dans l'AC31.02.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Tous droits réservés — Abdurahman Noui</footer>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('show')));
+</script>
+</body>
+</html>
